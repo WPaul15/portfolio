@@ -1,0 +1,24 @@
+@import "global";
+@import "title-bar";
+@import "navbar";
+
+* {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: $color-dark;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.no-select {
+    user-select: none;
+}
+
+p {
+    font-size: 12pt;
+}
+
+.content-wrapper {
+    padding: 15px;
+}
