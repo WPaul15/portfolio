@@ -231,11 +231,7 @@
   color: #282329;
 }
 
-.card-container h1,
-.card-container h2,
-.card-container h3,
-.card-container p,
-.card-container a {
+.card-container h1, .card-container h2, .card-container h3, .card-container p, .card-container a {
   color: #f2eff0;
 }
 
@@ -274,6 +270,6 @@ a {
 }
 
 .content-wrapper {
-  padding: 15px;
+  padding: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
