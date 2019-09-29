@@ -1,8 +1,6 @@
 .card-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
 @media all and (max-width: 500px) {
