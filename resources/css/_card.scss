@@ -1,0 +1,21 @@
+.card {
+    flex-grow: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 15px;
+    background-color: $color-dark-accent;
+
+    &:hover {
+        background-color: $color-dark-accent-light;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.card-container {
+    padding: 1rem;
+
+    h1, p {
+        color: $color-light;
+    }
+}

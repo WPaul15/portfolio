@@ -1,6 +1,7 @@
 @import "global";
 @import "title-bar";
 @import "navbar";
+@import "card";
 
 * {
     font-family: "Montserrat", Arial, sans-serif;
@@ -15,10 +16,24 @@
     user-select: none;
 }
 
+h1 {
+    font-size: 24pt;
+}
+
 p {
     font-size: 12pt;
 }
 
 .content-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
     padding: 15px;
+}
+
+@media all and (max-width: 500px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
 }
