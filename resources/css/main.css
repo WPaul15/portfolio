@@ -269,6 +269,14 @@ a {
   font-size: 12pt;
 }
 
+::-moz-selection {
+  background-color: #9e9aa7;
+}
+
+::selection {
+  background-color: #9e9aa7;
+}
+
 .content-wrapper {
   padding: 1rem;
 }

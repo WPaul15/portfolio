@@ -33,6 +33,10 @@ a {
     font-size: 12pt;
 }
 
+::selection {
+    background-color: $color-dark-accent-light;
+}
+
 .content-wrapper {
     padding: 1rem;
 }
