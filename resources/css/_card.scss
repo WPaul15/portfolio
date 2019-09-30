@@ -30,8 +30,10 @@
     @extend %card;
     background-color: $color-dark;
 
-    .card-container a:hover {
-        color: $color-primary;
+    .card-container i:only-child {
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
 
@@ -43,8 +45,7 @@
 .card-container {
     padding: 1rem;
 
-    a {
-        text-decoration: none;
+    i:only-child {
         transition: 0.1s;
 
         &:hover {
@@ -52,7 +53,11 @@
         }
     }
 
-    h1, h2, h3, p, a {
+    h1,
+    h2,
+    h3,
+    p,
+    a {
         color: $color-light;
     }
 }

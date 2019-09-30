@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @font-face {
   font-family: "Ailerons";
   src: url("../fonts/ailerons-typeface-webfont.woff2") format("woff2"), url("../fonts/ailerons-typeface-webfont.woff") format("woff");
@@ -145,9 +146,6 @@
 @media screen and (max-width: 600px) {
   .navbar.responsive a.menu-icon {
     float: right;
-    position: absolute;
-    right: 0px;
-    top: 0px;
   }
   .navbar.responsive a {
     float: none;
@@ -208,7 +206,7 @@
   background-color: #282329;
 }
 
-.dark .card-container a:hover {
+.dark .card-container i:only-child:hover {
   color: #c2402c;
 }
 
@@ -220,18 +218,31 @@
   padding: 1rem;
 }
 
-.card-container a {
-  text-decoration: none;
+.card-container i:only-child {
   -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
-.card-container a:hover {
+.card-container i:only-child:hover {
   color: #282329;
 }
 
-.card-container h1, .card-container h2, .card-container h3, .card-container p, .card-container a {
+.card-container h1,
+.card-container h2,
+.card-container h3,
+.card-container p,
+.card-container a {
   color: #f2eff0;
+}
+
+.material-icons {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  color: #f2eff0;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
 }
 
 * {
