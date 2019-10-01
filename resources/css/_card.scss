@@ -30,8 +30,12 @@
     @extend %card;
     background-color: $color-dark;
 
-    .card-container i:only-child {
+    .icon-link {
         &:hover {
+            color: $color-primary;
+        }
+
+        &:hover > i {
             color: $color-primary;
         }
     }
@@ -45,19 +49,12 @@
 .card-container {
     padding: 1rem;
 
-    i:only-child {
-        transition: 0.1s;
-
-        &:hover {
-            color: $color-dark;
-        }
-    }
-
     h1,
     h2,
     h3,
     p,
-    a {
+    a,
+    i {
         color: $color-light;
     }
 }

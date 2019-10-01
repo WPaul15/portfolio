@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 @font-face {
     font-family: "Ailerons";
@@ -7,4 +6,8 @@
          url("../fonts/ailerons-typeface-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+.fas {
+    color: $color-light;
 }

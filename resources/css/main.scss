@@ -3,7 +3,6 @@
 @import "title-bar";
 @import "navbar";
 @import "card";
-@import "icons";
 
 * {
     font-family: "Montserrat", Arial, sans-serif;
@@ -30,8 +29,7 @@ h3 {
     font-size: 16pt;
 }
 
-p,
-a {
+p {
     font-size: 12pt;
 }
 
@@ -41,4 +39,22 @@ a {
 
 .content-wrapper {
     padding: 1rem;
+}
+
+.icon-link {
+    display: inline-block;
+    transition: 0.1s;
+    text-decoration: none;
+
+    i {
+        transition: 0.1s;
+    }
+
+    &:hover {
+        color: $color-dark;
+    }
+
+    &:hover > i {
+        color: $color-dark;
+    }
 }
