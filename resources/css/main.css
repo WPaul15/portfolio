@@ -63,7 +63,8 @@
   display: none;
 }
 
-.navbar-item {
+.navbar-item,
+.menu-icon {
   float: left;
   display: block;
   color: #f2eff0;
@@ -76,11 +77,13 @@
   transition: 0.2s;
 }
 
-.navbar-item:hover {
+.navbar-item:hover,
+.menu-icon:hover {
   background-color: #d45643;
 }
 
-.navbar-item.selected {
+.selected.navbar-item,
+.selected.menu-icon {
   background-color: #7f788c;
 }
 
