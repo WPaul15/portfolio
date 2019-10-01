@@ -15,9 +15,10 @@
     transition: 0.3s;
     border-radius: 5px;
     margin: 5px;
-    background-color: $color-dark-accent;
+    background-color: $color-accent;
 
     &:hover {
+        background-color: $color-accent-light;
         box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
@@ -29,6 +30,10 @@
 .dark {
     @extend %card;
     background-color: $color-dark;
+
+    &:hover {
+        background-color: $color-dark-light;
+    }
 
     .icon-link {
         &:hover {
@@ -44,6 +49,10 @@
 .primary {
     @extend %card;
     background-color: $color-primary;
+
+    &:hover {
+        background-color: $color-primary-light;
+    }
 }
 
 .card-container {

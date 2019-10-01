@@ -148,12 +148,17 @@
 }
 
 .card:hover, .dark:hover, .primary:hover {
+  background-color: #9e9aa7;
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dark {
   background-color: #282329;
+}
+
+.dark:hover {
+  background-color: #4d444f;
 }
 
 .dark .icon-link:hover {
@@ -166,6 +171,10 @@
 
 .primary {
   background-color: #c2402c;
+}
+
+.primary:hover {
+  background-color: #da6552;
 }
 
 .card-container {
