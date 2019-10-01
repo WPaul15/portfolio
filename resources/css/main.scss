@@ -34,7 +34,7 @@ p {
 }
 
 ::selection {
-    background-color: $color-accent-light;
+    background-color: lighten($color-accent, 20%);
 }
 
 .content-wrapper {

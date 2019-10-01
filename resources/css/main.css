@@ -77,7 +77,7 @@
 }
 
 .navbar-item:hover {
-  background-color: #da6552;
+  background-color: #d45643;
 }
 
 .navbar-item.selected {
@@ -138,7 +138,7 @@
 }
 
 .card:hover, .dark:hover, .primary:hover {
-  background-color: #8c8697;
+  background-color: #8c8698;
   -webkit-box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -148,7 +148,7 @@
 }
 
 .dark:hover {
-  background-color: #39323b;
+  background-color: #352f37;
 }
 
 .dark .icon-link:hover {
@@ -164,7 +164,7 @@
 }
 
 .primary:hover {
-  background-color: #ca503c;
+  background-color: #d14b36;
 }
 
 .card-container {
@@ -214,11 +214,11 @@ p {
 }
 
 ::-moz-selection {
-  background-color: #8c8697;
+  background-color: #b3afbb;
 }
 
 ::selection {
-  background-color: #8c8697;
+  background-color: #b3afbb;
 }
 
 .content-wrapper {

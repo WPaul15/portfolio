@@ -18,7 +18,7 @@
     background-color: $color-accent;
 
     &:hover {
-        background-color: $color-accent-light;
+        background-color: lighten($color-accent, 5%);
         box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
@@ -32,7 +32,7 @@
     background-color: $color-dark;
 
     &:hover {
-        background-color: $color-dark-light;
+        background-color: lighten($color-dark, 5%);
     }
 
     .icon-link {
@@ -51,7 +51,7 @@
     background-color: $color-primary;
 
     &:hover {
-        background-color: $color-primary-semi-light;
+        background-color: lighten($color-primary, 5%);
     }
 }
 
