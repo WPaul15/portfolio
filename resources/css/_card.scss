@@ -11,7 +11,7 @@
 
 %card {
     flex-grow: 1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
     border-radius: 5px;
     margin: 5px;
@@ -19,7 +19,7 @@
 
     &:hover {
         background-color: $color-accent-light;
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 
@@ -51,7 +51,7 @@
     background-color: $color-primary;
 
     &:hover {
-        background-color: $color-primary-light;
+        background-color: $color-primary-semi-light;
     }
 }
 
