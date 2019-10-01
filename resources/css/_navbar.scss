@@ -10,7 +10,8 @@
     }
 }
 
-%navbar-item {
+.navbar-item,
+.menu-icon {
     float: left;
     display: block;
     color: $color-light;
@@ -30,35 +31,32 @@
     }
 }
 
-.navbar-item,
-.menu-icon {
-    @extend %navbar-item;
-}
-
 @media screen and (max-width: 600px) {
     .navbar {
-        a:not(:first-child) {
-            display: none;
-        }
-
-        a.menu-icon {
-            float: right;
-            display: block;
-        }
-    }
-
-    .navbar.responsive {
-        a.menu-icon {
-            position: absolute;
-            top: 0;
-            right: 0;
-            float: right;
-        }
-
         a {
-            float: none;
-            display: block;
-            text-align: center;
+            &:not(:first-child) {
+                display: none;
+            }
+
+            &.menu-icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        &.responsive {
+            a {
+                float: none;
+                display: block;
+                text-align: center;
+
+                &.menu-icon {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    float: right;
+                }
+            }
         }
     }
 }

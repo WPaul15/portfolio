@@ -82,8 +82,8 @@
   background-color: #d45643;
 }
 
-.selected.navbar-item,
-.selected.menu-icon {
+.navbar-item.selected,
+.menu-icon.selected {
   background-color: #7f788c;
 }
 
@@ -95,16 +95,16 @@
     float: right;
     display: block;
   }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
   .navbar.responsive a.menu-icon {
     position: absolute;
     top: 0;
     right: 0;
     float: right;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: center;
   }
 }
 
