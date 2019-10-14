@@ -1,13 +1,10 @@
 .title-bar {
     position: relative;
+    background-image: url("../img/background-salzburg.jpg");
+    height: 50vh;
+    background-size: cover;
     text-align: center;
     overflow: hidden;
-
-    img {
-        vertical-align: middle;
-        max-width: 100%;
-        height: auto;
-    }
 
     h1 {
         font-family: "Ailerons", Arial, sans-serif;
@@ -18,12 +15,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
         transition: 0.2s;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .title-bar h1 {
-        font-size: 36pt;
     }
 }
 
