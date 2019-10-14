@@ -3,11 +3,12 @@
 @font-face {
     font-family: "Ailerons";
     src: url("../fonts/ailerons-typeface-webfont.woff2") format("woff2"),
-         url("../fonts/ailerons-typeface-webfont.woff") format("woff");
+        url("../fonts/ailerons-typeface-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
-.fas {
+.fas,
+.fab {
     color: $color-light;
 }

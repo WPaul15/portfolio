@@ -3,6 +3,7 @@
 @import "title-bar";
 @import "navbar";
 @import "card";
+@import "footer";
 
 * {
     font-family: "Montserrat", Arial, sans-serif;
@@ -32,6 +33,10 @@ h3 {
 p {
     font-size: 12pt;
     margin-bottom: 1rem;
+
+    &.no-spacing {
+        margin-bottom: 0;
+    }
 }
 
 ::selection {

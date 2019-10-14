@@ -1,0 +1,30 @@
+.footer {
+    overflow: hidden;
+    background-color: $color-dark;
+    box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    :last-child {
+        cursor: default;
+        float: right;
+
+        &:hover {
+            background-color: $color-dark;
+        }
+    }
+}
+
+.footer-item {
+    float: left;
+    display: block;
+    color: $color-light;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: 700;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: lighten($color-dark, 8%);
+    }
+}
