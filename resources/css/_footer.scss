@@ -1,11 +1,14 @@
 .footer {
     overflow: hidden;
     background-color: $color-dark;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 
     :last-child {
-        cursor: default;
         float: right;
+        cursor: default;
 
         &:hover {
             background-color: $color-dark;

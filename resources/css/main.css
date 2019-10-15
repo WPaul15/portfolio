@@ -47,6 +47,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -178,13 +179,16 @@
 .footer {
   overflow: hidden;
   background-color: #282329;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   -webkit-box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .footer :last-child {
-  cursor: default;
   float: right;
+  cursor: default;
 }
 
 .footer :last-child:hover {
@@ -254,8 +258,14 @@ p.no-spacing {
   background-color: #b3afbb;
 }
 
+.page-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
 .content-wrapper {
-  padding: 1rem;
+  padding: 1rem 1rem calc(16pt + 3rem);
 }
 
 .icon-link {

@@ -43,8 +43,14 @@ p {
     background-color: lighten($color-accent, 20%);
 }
 
+.page-wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+}
+
 .content-wrapper {
-    padding: 1rem;
+    padding: 1rem 1rem calc(16pt + 3rem);
 }
 
 .icon-link {
