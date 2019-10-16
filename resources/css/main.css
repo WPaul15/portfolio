@@ -229,6 +229,10 @@
           user-select: none;
 }
 
+.no-display {
+  display: none;
+}
+
 h1 {
   font-size: 24pt;
 }
