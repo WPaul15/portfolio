@@ -3,6 +3,7 @@
 @import "title-bar";
 @import "navbar";
 @import "card";
+@import "collapsible";
 @import "footer";
 
 * {
@@ -36,7 +37,7 @@ h3 {
 
 p {
     font-size: 12pt;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 
     &.no-spacing {
         margin-bottom: 0;

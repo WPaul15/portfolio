@@ -176,6 +176,30 @@
   color: #f2eff0;
 }
 
+.collapsible {
+  border: 1px solid #7f788c;
+  border-radius: 5px;
+}
+
+.collapsible-item {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.collapsible-item:hover {
+  background-color: #e7e1e3;
+}
+
+.collapsible-item p {
+  display: none;
+}
+
+.collapsible-item.expanded p {
+  display: block;
+}
+
 .footer {
   overflow: hidden;
   background-color: #282329;
@@ -247,7 +271,7 @@ h3 {
 
 p {
   font-size: 12pt;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 p.no-spacing {
