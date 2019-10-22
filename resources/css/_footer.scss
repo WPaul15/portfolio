@@ -29,5 +29,11 @@
 
     &:hover {
         background-color: lighten($color-dark, 8%);
+
+        i {
+            transition: 0.2s;
+            color: $color-primary;
+            cursor: pointer;
+        }
     }
 }

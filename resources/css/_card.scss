@@ -35,12 +35,10 @@
         background-color: lighten($color-dark, 5%);
     }
 
-    .icon-link {
-        &:hover {
-            color: $color-primary;
-        }
+    .icon-link:hover {
+        color: $color-primary;
 
-        &:hover > i {
+        i {
             color: $color-primary;
         }
     }

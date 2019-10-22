@@ -151,7 +151,7 @@
   color: #c2402c;
 }
 
-.dark .icon-link:hover > i {
+.dark .icon-link:hover i {
   color: #c2402c;
 }
 
@@ -234,6 +234,13 @@
 
 .footer-item:hover {
   background-color: #3d363f;
+}
+
+.footer-item:hover i {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #c2402c;
+  cursor: pointer;
 }
 
 * {
