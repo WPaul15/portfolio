@@ -243,8 +243,8 @@
 
 .left-split {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+      -ms-flex: 1 0 175px;
+          flex: 1 0 175px;
   padding: 1rem;
   background-color: #a6a1af;
 }
@@ -364,9 +364,31 @@ label {
 }
 
 progress {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #282329;
   background-color: inherit;
   border: 1px #282329 solid;
+  height: 0.5rem;
   width: 100%;
+  margin-bottom: 1rem;
+}
+
+progress::-webkit-progress-bar {
+  color: #282329;
+  background-color: #7f788c;
+  border: 1px #282329 solid;
+}
+
+progress::-webkit-progress-value {
+  color: #282329;
+}
+
+progress::-moz-progress-bar {
+  color: #282329;
+  background-color: #7f788c;
+  border: 1px #282329 solid;
 }
 
 hr {

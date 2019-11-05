@@ -53,9 +53,32 @@ label {
 }
 
 progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+
+	color: $color-dark;
 	background-color: inherit;
 	border: 1px $color-dark solid;
+	height: 0.5rem;
 	width: 100%;
+	margin-bottom: 1rem;
+}
+
+progress::-webkit-progress-bar {
+	color: $color-dark;
+	background-color: $color-accent;
+	border: 1px $color-dark solid;
+}
+
+progress::-webkit-progress-value {
+	color: $color-dark;
+}
+
+progress::-moz-progress-bar {
+	color: $color-dark;
+	background-color: $color-accent;
+	border: 1px $color-dark solid;
 }
 
 hr {
