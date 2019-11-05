@@ -66,8 +66,7 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-	color: $color-dark;
-	background-color: $color-accent;
+	background-color: inherit;
 	border: 1px $color-dark solid;
 }
 
@@ -77,7 +76,7 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
 	color: $color-dark;
-	background-color: $color-accent;
+	background-color: inherit;
 	border: 1px $color-dark solid;
 }
 
