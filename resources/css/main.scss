@@ -3,6 +3,7 @@
 @import "title-bar";
 @import "navbar";
 @import "card";
+@import "resume";
 @import "collapsible";
 @import "split";
 @import "footer";
@@ -20,18 +21,6 @@ html,
 body {
 	height: 100%;
 	position: relative;
-}
-
-.no-select {
-	user-select: none;
-}
-
-.no-display {
-	display: none;
-}
-
-.italic {
-	font-style: italic;
 }
 
 h1 {
@@ -61,10 +50,6 @@ ul {
 
 label {
 	display: inline-block;
-
-	&.float-right {
-		float: right;
-	}
 }
 
 progress {
@@ -98,26 +83,6 @@ hr {
 	padding: 1rem 1rem 6.5rem;
 }
 
-.section-wrapper {
-	position: relative;
-}
-
-.section-title {
-	color: $color-light;
-	background-color: $color-primary;
-	padding: 0.5rem;
-	margin: 1rem 0 0.5rem;
-	user-select: none;
-
-	&.accent {
-		background-color: $color-accent;
-	}
-
-	&.no-margin {
-		margin-top: 0;
-	}
-}
-
 .icon-link {
 	display: inline-block;
 	transition: 0.2s;
@@ -134,4 +99,20 @@ hr {
 	&:hover > i {
 		color: $color-dark;
 	}
+}
+
+.no-select {
+	user-select: none;
+}
+
+.no-display {
+	display: none;
+}
+
+.float-right {
+	float: right;
+}
+
+.italic {
+	font-style: italic;
 }

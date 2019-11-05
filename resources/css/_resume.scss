@@ -1,0 +1,28 @@
+.section-wrapper {
+	position: relative;
+}
+
+.section-title {
+    text-align: center;
+	color: $color-light;
+	background-color: $color-primary;
+	padding: 0.5rem;
+	margin: 1rem 0 0.5rem;
+    user-select: none;
+    
+    i {
+        float: left;
+    }
+
+	&.accent {
+		background-color: $color-accent;
+	}
+
+	&.no-margin {
+		margin-top: 0;
+	}
+}
+
+.resume-item {
+    display: inline-block;
+}
