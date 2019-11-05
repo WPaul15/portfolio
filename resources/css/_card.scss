@@ -3,7 +3,7 @@
     flex-flow: row wrap;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     .card-wrapper {
         flex-direction: column;
     }

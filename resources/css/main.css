@@ -111,7 +111,7 @@
           flex-flow: row wrap;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .card-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -200,6 +200,47 @@
   display: block;
 }
 
+.split-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-split {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 1rem;
+  background-color: #a6a1af;
+}
+
+.right-split {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 1rem 0 0 1rem;
+}
+
+@media all and (max-width: 600px) {
+  .split-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .left-split {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .right-split {
+    padding: 0;
+  }
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,6 +313,10 @@ body {
   display: none;
 }
 
+.italic {
+  font-style: italic;
+}
+
 h1 {
   font-size: 24pt;
 }
@@ -281,7 +326,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
 p {
@@ -291,6 +336,33 @@ p {
 
 p.no-spacing {
   margin-bottom: 0;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+label {
+  display: inline-block;
+}
+
+label.float-right {
+  float: right;
+}
+
+progress {
+  background-color: inherit;
+  border: 1px #282329 solid;
+  width: 100%;
+}
+
+hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px #7f788c solid;
 }
 
 ::-moz-selection {
@@ -311,6 +383,29 @@ p.no-spacing {
 
 .content-wrapper {
   padding: 1rem 1rem 6.5rem;
+}
+
+.section-wrapper {
+  position: relative;
+}
+
+.section-title {
+  color: #f2eff0;
+  background-color: #c2402c;
+  padding: 0.5rem;
+  margin: 1rem 0 0.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.section-title.accent {
+  background-color: #7f788c;
+}
+
+.section-title.no-margin {
+  margin-top: 0;
 }
 
 .icon-link {

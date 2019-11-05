@@ -1,0 +1,29 @@
+.split-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-split {
+    flex: 1;
+    padding: 1rem;
+    background-color: lighten($color-accent, 15%);
+}
+
+.right-split {
+    flex: 3;
+    padding: 1rem 0 0 1rem;
+}
+
+@media all and (max-width: 600px) {
+    .split-wrapper {
+        flex-direction: column;
+    }
+
+    .left-split {
+        order: 1;
+    }
+
+    .right-split {
+        padding: 0;
+    }
+}
