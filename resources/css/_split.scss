@@ -6,12 +6,23 @@
 .left-split {
     flex: 1 0 175px;
     padding: 1rem;
-    background-color: lighten($color-accent, 15%);
+
+    &.accent {
+        background-color: lighten($color-accent, 15%);
+    }
 }
 
 .right-split {
     flex: 3;
     padding: 1rem 0 0 1rem;
+}
+
+.reset-flex {
+    flex: 1;
+}
+
+.flex-3 {
+    flex: 3;
 }
 
 @media all and (max-width: 600px) {
@@ -25,5 +36,10 @@
 
     .right-split {
         padding: 0 0 1rem;
+    }
+
+    .reset-flex,
+    .flex-3 {
+        order: 0;
     }
 }
