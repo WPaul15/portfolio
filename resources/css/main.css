@@ -131,6 +131,7 @@
   border-radius: 5px;
   margin: 5px;
   background-color: #7f788c;
+  position: relative;
 }
 
 .card:hover, .dark:hover, .primary:hover {
@@ -164,7 +165,10 @@
 }
 
 .card-container {
-  padding: 1rem;
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 1rem 1rem 2rem;
 }
 
 .card-container h1,
@@ -174,6 +178,19 @@
 .card-container a,
 .card-container i {
   color: #f2eff0;
+}
+
+.card-container .icon-link {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.card-container .icon-link.inactive {
+  color: #4d4955;
+}
+
+.card-container .icon-link.inactive i {
+  color: #4d4955;
 }
 
 .section-wrapper {
