@@ -75,7 +75,7 @@ progress::-webkit-progress-value {
 
 progress::-moz-progress-bar {
 	color: $color-dark;
-	background-color: inherit;
+	background-color: $color-dark;
 	border: 1px $color-dark solid;
 }
 
