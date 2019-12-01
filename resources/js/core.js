@@ -1,3 +1,12 @@
+var copyright = document.getElementById("copyright");
+var year = new Date().getFullYear();
+
+if (year !== 2019)
+	copyright.innerHTML = "&copy;2019&ndash;" + year.toString() + " Willem Paul";
+else
+	copyright.innerHTML = "&copy;2019 Willem Paul";
+
+
 function onNavbarMenuClick() {
 	var navbar = document.getElementById("navbar");
 
