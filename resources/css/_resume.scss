@@ -12,7 +12,11 @@
     
     i {
         float: left;
-    }
+	}
+	
+	a {
+		color: $color-light;
+	}
 
 	&.accent {
 		background-color: $color-accent;
