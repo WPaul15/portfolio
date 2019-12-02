@@ -4,7 +4,7 @@
 }
 
 %card {
-    flex: 1 1 400px;
+	flex: 1 1 400px;
 	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transition: 0.3s;
 	border-radius: 5px;
@@ -52,11 +52,47 @@
 	}
 }
 
+.image {
+	@extend %card;
+	flex: 0 1 30%;
+
+	.img-card-desc {
+		display: none;
+		width: 15rem;
+		right: 0;
+		top: 75%;
+		padding: 0.5rem;
+		background-color: rgba($color-primary, 0.75);
+		color: $color-light;
+		z-index: 1;
+	}
+
+	.card-container {
+		padding: 0;
+
+		img {
+			border-radius: 5px;
+			display: block;
+			max-width: 100%;
+			max-height: 100%;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&:hover {
+		.img-card-desc {
+			position: absolute;
+			display: block;
+		}
+	}
+}
+
 .card-container {
 	position: relative;
 	display: block;
-    word-wrap: normal;
-    height: 100%;
+	word-wrap: normal;
+	height: 100%;
 	padding: 1rem 1rem 2rem;
 
 	h1,
