@@ -1,119 +1,129 @@
 .card-wrapper {
-	display: flex;
-	flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 %card {
-	flex: 1 1 400px;
-	box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition: 0.3s;
-	border-radius: 5px;
-	margin: 5px;
-	background-color: $color-accent;
-	position: relative;
+    flex: 1 1 400px;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.2), 4px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.3s;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: $color-accent;
+    position: relative;
 
-	&:hover {
-		background-color: lighten($color-accent, 5%);
-		box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
-	}
+    &:hover {
+        background-color: lighten($color-accent, 5%);
+        box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.2), 8px 12px 20px 0 rgba(0, 0, 0, 0.19);
+    }
 }
 
 .card {
-	@extend %card;
+    @extend %card;
 }
 
 .dark {
-	@extend %card;
-	background-color: $color-dark;
+    @extend %card;
+    background-color: $color-dark;
 
-	&:hover {
-		background-color: lighten($color-dark, 5%);
-	}
+    &:hover {
+        background-color: lighten($color-dark, 5%);
+    }
 
-	a:hover {
-		color: $color-primary;
-	}
+    a:hover {
+        color: $color-primary;
+    }
 
-	.icon-link:hover {
-		color: $color-primary;
+    .icon-link:hover {
+        color: $color-primary;
 
-		i {
-			color: $color-primary;
-		}
-	}
+        i {
+            color: $color-primary;
+        }
+    }
 }
 
 .primary {
-	@extend %card;
-	background-color: $color-primary;
+    @extend %card;
+    background-color: $color-primary;
 
-	&:hover {
-		background-color: lighten($color-primary, 5%);
-	}
+    &:hover {
+        background-color: lighten($color-primary, 5%);
+    }
 }
 
 .image {
-	@extend %card;
-	flex: 0 1 30%;
+    @extend %card;
+    flex: 0 1 30%;
 
-	.img-card-desc {
-		display: none;
-		width: 15rem;
-		right: 0;
-		top: 75%;
-		padding: 0.5rem;
-		background-color: rgba($color-primary, 0.75);
-		color: $color-light;
-		z-index: 1;
+	.image-overlay {
+		border-radius: 5px;
+		transition: 0.3s;
 	}
 
-	.card-container {
-		padding: 0;
+    .img-card-desc {
+		visibility: hidden;
+        position: absolute;
+        display: block;
+        width: 15rem;
+        right: 0;
+        top: 75%;
+        padding: 0.5rem;
+        background-color: rgba($color-primary, 0.75);
+        color: $color-light;
+        z-index: 1;
+    }
 
-		img {
-			border-radius: 5px;
-			display: block;
-			max-width: 100%;
-			max-height: 100%;
-			width: auto;
-			height: auto;
+    .card-container {
+        padding: 0;
+
+        img {
+            border-radius: 5px;
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
 		}
-	}
+    }
 
-	&:hover {
-		.img-card-desc {
-			position: absolute;
-			display: block;
+    &:hover {
+		.image-overlay {
+			opacity: 0;
 		}
-	}
+
+        .img-card-desc {
+			visibility: visible;
+        }
+    }
 }
 
 .card-container {
-	position: relative;
-	display: block;
-	word-wrap: normal;
-	height: 100%;
-	padding: 1rem 1rem 2rem;
+    position: relative;
+    display: block;
+    word-wrap: normal;
+    height: 100%;
+    padding: 1rem 1rem 2rem;
 
-	h1,
-	h2,
-	h3,
-	p,
-	a,
-	i {
-		color: $color-light;
-	}
+    h1,
+    h2,
+    h3,
+    p,
+    a,
+    i {
+        color: $color-light;
+    }
 
-	.icon-link {
-		position: absolute;
-		bottom: 1rem;
+    .icon-link {
+        position: absolute;
+        bottom: 1rem;
 
-		&.inactive {
-			color: darken($color-accent, 20%);
+        &.inactive {
+            color: darken($color-accent, 20%);
 
-			i {
-				color: darken($color-accent, 20%);
-			}
-		}
-	}
+            i {
+                color: darken($color-accent, 20%);
+            }
+        }
+    }
 }
