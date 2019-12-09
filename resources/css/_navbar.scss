@@ -25,6 +25,7 @@
 
     &:hover {
         background-color: lighten($color-primary, 8%);
+        color: $color-light;
     }
 
     &.selected {
