@@ -54,7 +54,7 @@
 
 .image {
     @extend %card;
-    flex: 0 1 30%;
+    flex: 0 1 500px;
 
 	.image-overlay {
 		border-radius: 5px;
@@ -65,10 +65,11 @@
 		visibility: hidden;
         position: absolute;
         display: block;
-        width: 15rem;
+        width: 16rem;
         right: 0;
         top: 75%;
         padding: 0.5rem;
+        margin: 0;
         background-color: rgba($color-primary, 0.75);
         color: $color-light;
         z-index: 1;
