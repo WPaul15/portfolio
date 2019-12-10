@@ -8,12 +8,14 @@
 
 	:last-child {
 		border-radius: 0 0 5px 5px;
+		border: none;
 	}
 }
 
 .collapsible-item {
 	transition: 0.3s;
 	padding: 0.5rem;
+	border-bottom: 1px solid lighten($color-accent, 25%);
 	cursor: pointer;
 
 	&:hover {
