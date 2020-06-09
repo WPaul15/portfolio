@@ -8,6 +8,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "DejaVu Sans";
+    src: url("../fonts/DejaVuSans-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 .fas,
 .fab {
     color: $color-light;
